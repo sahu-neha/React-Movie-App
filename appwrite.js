@@ -7,8 +7,8 @@ import * as Appwrite from "appwrite";
 console.log(Appwrite);
 
 const client = new Appwrite.Client()
-  .setEndpoint(import.meta.env.VITE_APPWRITE_ENDPOINT)
-  .setProject(import.meta.env.VITE_APPWRITE_PROJECT_ID);
+  .setEndpoint(ENDPOINT)
+  .setProject(PROJECT_ID);
 
 const databases = new Appwrite.Databases(client);
 
